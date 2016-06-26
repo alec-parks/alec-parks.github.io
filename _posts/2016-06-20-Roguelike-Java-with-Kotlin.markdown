@@ -11,6 +11,8 @@ This will follow the guide presented in [Trystan's Blog][trystan-blog] using [As
 
 I will be making commits to my [Github repo][gh-repo] for each section in the tutorial, along with code and explanations on what was changed and why.
 
+The actual [Table of Contents]({% post_url 2016-06-21-table-of-contents %}) will be updated as new entries to the series are made.
+
 
 [trystan-blog]: https://trystans.blogspot.com/2016/01/roguelike-tutorial-00-table-of-contents.html
 [ascii-p]: https://github.com/trystan/AsciiPanel
