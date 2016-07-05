@@ -26,7 +26,46 @@ From within the IDE, right click your folder, and chose ``Add as Library`` optio
 
 Once your initial structure is set up, it should look like [this][gh-commit].
 
+## Let's get some code!
+
+Initially, the code will be set up to just get some basic text on screen and we can go from there.
+
+{% highlight kotlin linenos %}
+package roglin
+
+import javax.swing.JFrame
+import asciiPanel.AsciiPanel
+
+fun main(args: Array<String>){
+    val app = ApplicationMain()
+    app.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
+    app.isVisible = true
+}
+
+class ApplicationMain(): JFrame() {
+    private val terminal: AsciiPanel
+
+    init {
+        terminal = AsciiPanel()
+        terminal.write("roglin tutorial", 1, 1)
+        add(terminal)
+        pack()
+    }
+}
+{% endhighlight %}
+
+
+Some things to notice:
+
+- Kotlin uses `val` and `var` for variables.
+    - `val` represents a read only property
+    - `var` represents a mutable property
+- The constructor is not the name of the class, but init (this might look familiar to you Python folks and `__init__`)
+
+You can see the code as is [here][gh2]
+
 [idea]: https://www.jetbrains.com/idea
 [src]: https://github.com/trystan/AsciiPanel
 [jr]: https://github.com/downloads/trystan/AsciiPanel/asciipanel.jar
 [gh-commit]: https://github.com/alec-parks/roglin/tree/d0b29ba500a52e206872c9810651fe55125ecef1
+[gh2]:https://github.com/alec-parks/roglin/tree/6e577e234665b7dbee9011f82b6b737da18575ed
