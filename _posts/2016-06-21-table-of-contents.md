@@ -9,3 +9,4 @@ permalink: /KotlinToC
 ## Table of Contents
 
 1. [Getting Started]({% post_url 2016-06-21-Getting-Started %})
+2. [Control and Flow]({% post_url 2016-07-05-Control %}) 
