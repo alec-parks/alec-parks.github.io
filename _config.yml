@@ -18,3 +18,9 @@ github_username:  alec-parks
 
 # Build settings
 markdown: kramdown
+
+#defaults
+defaults:
+  -
+    values:
+      comments: true
